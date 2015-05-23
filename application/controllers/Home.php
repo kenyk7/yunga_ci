@@ -51,6 +51,10 @@ class Home extends CI_Controller {
 			redirect(base_url(),301);
 		}
 
+		$this->layout->setTitle($data_photo->imageTitulo);
+
+		$this->layout->setImage($data['url_service_small'].$data_photo->imageName);
+
 		$this->layout->view('photo_view',$data);
 	}
 	public function favoritas()
@@ -68,6 +72,7 @@ class Home extends CI_Controller {
 		$data['results'] = $data_ser;
 		$data['titlepag'] = 'Favoritas';
 
+		$this->layout->setTitle('Favoritas: Fotos con más likes'); 
 		$this->layout->view('search_view',$data);
 	}
 
@@ -117,14 +122,17 @@ class Home extends CI_Controller {
 
 	public function submit()
 	{
+		$this->layout->setTitle('Enviar una Foto');
 		$this->layout->view('submit_view');
 	}
 	public function proyecto()
 	{
+		$this->layout->setTitle('Sobre el Proyecto'); 
 		$this->layout->view('proyecto_view');
 	}
 	public function historia()
 	{
+		$this->layout->setTitle('Historia'); 
 		$this->layout->view('historia_view');
 	}
 	

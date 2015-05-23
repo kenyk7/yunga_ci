@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <base href="<?php echo base_url() ?>">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Santa Rosa - Jaén | Yunga</title>
+  <title><?php echo $this->layout->getTitle(); ?></title>
   <!-- meta data -->
   <meta name="author" content="Keny Romero">
-  <meta name="description" content="Sitio Web para compartir Fotografias del Distrito de Santa Rosa Jaén: Turismo, Naturaleza y más">
+  <meta name="description" content="<?php echo $this->layout->getDescripcion(); ?>">
   <!-- Bootstrap and css-->
   <link href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.paper.css" rel="stylesheet">
   <link href="<?php echo base_url(); ?>assets/plugins/jasnyupload/jasny-bootstrap.min.css" rel="stylesheet">
@@ -26,6 +27,19 @@
   <link rel="apple-touch-icon" sizes="120x120" href="<?php echo base_url(); ?>assets/icons/apple-touch-icon-120x120.png" />
   <link rel="apple-touch-icon" sizes="144x144" href="<?php echo base_url(); ?>assets/icons/apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="<?php echo base_url(); ?>assets/icons/apple-touch-icon-152x152.png" />
+
+  <meta property="og:site_name" content="<?php echo $this->layout->getTitle(); ?>"/>
+  <meta property="og:title" content="<?php echo $this->layout->getTitle(); ?>"/>
+  <meta property="og:description" content="<?php echo $this->layout->getDescripcion(); ?>" />
+  <meta property="og:url" content="<?php echo current_url(); ?>"/>
+  <meta property="og:image" content="<?php echo $this->layout->getImage(); ?>" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<?php echo $this->layout->getTitle(); ?>" />
+  <meta name="twitter:description" content="<?php echo $this->layout->getDescripcion(); ?>" />
+  <meta name="twitter:url" content="<?php echo current_url(); ?>" />
+  <meta name="twitter:image:src" content="<?php echo $this->layout->getImage(); ?>"/>
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -214,9 +228,9 @@ $(function () {
     e.preventDefault();
     $.get($(this).data('action'), function(data) {
       if(data['message'] === 'success'){
-          new PNotify({title: 'OK!',text: 'Gracias por el Like',type: 'success',styling: 'fontawesome'});
+          new PNotify({title: 'Ok!',text: 'Gracias por el Like',type: 'success',styling: 'fontawesome'});
       }else{
-          new PNotify({title: 'Error!',text: 'Ha ocurrido un error<br> '+data['message'],type: 'error',styling: 'fontawesome'});
+        new PNotify({title: 'Info',text: 'Al parecer ya indicó que le gusta esta Foto',type: 'info',styling: 'fontawesome'});
       }
     });
   });

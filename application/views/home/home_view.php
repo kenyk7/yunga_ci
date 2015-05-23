@@ -6,7 +6,7 @@
     <div class="col-lg-3 col-md-4 col-xs-6 item welcome-message">
       <div class="panel panel-primary">
         <div class="panel-body">
-          <a href="#"><img src="uploads/test/photo2.jpg" alt="Santa Rosa" class="img-responsive" width="700" height="auto"></a>
+          <img src="<?php echo base_url(); ?>assets/images/yunga.jpg" alt="Santa Rosa" class="img-responsive" width="500" height="auto">
           <h4>Santa Rosa de la Yunga</h4>
           <p class="hidden-xxs">Un Sitio web donde pordrás compartir fotos de alta calidad acerca del <strong>Distrito de Santa Rosa - Jaén</strong>. Como: Turismo, Paisajes y todo tipo de Fototografías relacionadas al mismo. Si te interesa el Sitio Web y quieres formar parte y colaborar, Envianos un Email solicitando resgistrarte y abriremos un registro para que tu también puedas publicar tus fotografías.</p>
           <a href="<?php echo base_url(); ?>proyecto" class="btn btn-primary btn-block">Quiero formar parte</a><br>

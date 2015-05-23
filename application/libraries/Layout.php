@@ -32,14 +32,14 @@ class Layout
 	 * Variables para mejorar el SEO del sitio
 	 * @var sting
 	 */	
-	public $title       = ' Chiclayo Inmobiliaria: Venta y aquiler de casas, departamentos, terrenos, lotes, oficinas en chiclayo';	
+	public $title       = 'Santa Rosa - Jaén | Yunga';	
 
-	public $keywords    = 'alquiler, venta, casas chiclayo, departamentos chiclayo, terrenos chiclayo, lotes chiclayo, inmobiliarias, locales comerciales, propiedades chiclayo';	
-	public $descripcion = 'Somos una unidad de negocios de la empresa Perú Training Company EIRL dedicados a los negocios inmobiliarios comprometidos en el negocio de inversión de propiedades, orientados a optimizar su presupuesto, captar sus necesidades y rentabilizar su inversión.';
+	public $keywords    = 'fotografias, paisajes, naturaleza, santa rosa, jaen, turismo, cataratas';	
+	public $descripcion = 'Sitio Web para compartir Fotografias del Distrito de Santa Rosa Jaén: Turismo, Naturaleza y más';
 
 	// Open graf
 
-	public $image = 'http://www.chiclayoinmobiliaria.com/assets/img/logo.png';
+	public $image = 'assets/images/yunga.jpg';
 
 	/**
 	 * Constructor
@@ -105,7 +105,7 @@ class Layout
 	}
 	public function setTitle($title)
 	{
-		$this->title = $title;
+		$this->title = $title." | Yunga";
 	}
 
 	public function setKeywords($keywords)
