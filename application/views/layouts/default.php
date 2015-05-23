@@ -154,16 +154,18 @@
 <script src="<?php echo base_url(); ?>assets/js/isotope.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/typed.min.js"></script>
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-
 <script src="<?php echo base_url(); ?>assets/js/okzoom.js"></script>
-
 <script src="<?php echo base_url(); ?>assets/plugins/pnotify/pnotify.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/jasnyupload/jasny-bootstrap.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/plugins/elevatezoom/elevatezoom.min.js"></script>
-
 <script src="<?php echo base_url(); ?>assets/js/Kajax.js"></script>
-
 <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60298232-2', 'auto');
+  ga('send', 'pageview');
 
 var cur = location.href;
 if($(".actives a[href='"+cur+"']").attr('href') == cur){
@@ -187,8 +189,6 @@ jQuery(document).ready(function($) {
   forms.sendFormFile('#form-image-upload');
 });
 
-
-
 $(function() {
   $('#blueimp-gallery').on('opened', function (event) {
       $('.slides img').okzoom({
@@ -210,7 +210,6 @@ $(function() {
         border: "2px solid #ddd"
       });
 });
-
 
 $(function () {
 
