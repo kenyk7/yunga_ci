@@ -56,7 +56,7 @@
     <h1><span class="hidden-xs">Bienvenidos a </span><br><strong class="welcome">Santa Rosa de la Yunga</strong></h1>
     <div class="social-header wow slideInRight">
       <span>Síguenos en:</span>
-      <a href="https://www.facebook.com/pages/Santa-Rosa-Ja%C3%A9n/541317689344111" target="_blank" class="fb " data-toggle="tooltip" title="Facebook" data-placement="left"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.facebook.com/YungaSR" target="_blank" class="fb " data-toggle="tooltip" title="Facebook" data-placement="left"><i class="fa fa-facebook"></i></a>
     </div>
   </div>
 </div>
