@@ -18,9 +18,9 @@
           </div>
           <div class="pull-right social-container">
             <div class="btn-group btn-group- btn-social">
-              <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo current_url(); ?>" class="btn btn-default facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/share?url=<?php echo current_url(); ?>" class="btn btn-default twitter"><i class="fa fa-twitter"></i></a>
-              <a href="https://plus.google.com/share?url=<?php echo current_url(); ?>" class="btn btn-default google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo current_url(); ?>" class="btn btn-default facebook" target="social"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/share?url=<?php echo current_url(); ?>" class="btn btn-default twitter" target="social"><i class="fa fa-twitter"></i></a>
+              <a href="https://plus.google.com/share?url=<?php echo current_url(); ?>" class="btn btn-default google-plus" target="social"><i class="fa fa-google-plus"></i></a>
               <a class="btn btn-default btn-social-close"><i class="fa fa-times-circle"></i></a>
             </div>
 
