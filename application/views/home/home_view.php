@@ -3,14 +3,14 @@
 <section>
 <div class="container-fluid">
   <div class="row isotope-content">
-    <div class="col-lg-3 col-md-4 col-xs-6 item welcome-message">
+    <div class="col-lg-3 col-md-4 col-xs-6 item welcome-message wow slideInUp">
       <div class="panel panel-primary">
         <div class="panel-body">
           <img src="<?php echo base_url(); ?>assets/images/yunga.jpg" alt="Santa Rosa" class="img-responsive" width="500" height="auto">
           <h4>Santa Rosa de la Yunga</h4>
           <p class="hidden-xxs">Un Sitio web donde pordrás compartir fotos de alta calidad acerca del <strong>Distrito de Santa Rosa - Jaén</strong>. Como: Turismo, Paisajes y todo tipo de Fototografías relacionadas al mismo. Si te interesa el Sitio Web y quieres formar parte y colaborar, Envianos un Email solicitando resgistrarte y abriremos un registro para que tu también puedas publicar tus fotografías.</p>
           <a href="<?php echo base_url(); ?>proyecto" class="btn btn-primary btn-block">Quiero formar parte</a><br>
-          <div class="text-center facebook-page">
+          <div class="text-center facebook-page wow slideInUp">
             <div class="fb-page" data-href="https://www.facebook.com/pages/Santa-Rosa-Ja%C3%A9n/541317689344111" data-width="100%" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
           </div>
         </div>
@@ -18,8 +18,8 @@
     </div>
 
     <?php foreach ($data_ser as $data) { ?>
-    <div class="col-lg-3 col-md-4 col-xs-6 item">
-      <div class="panel panel-default">
+    <div class="col-lg-3 col-md-4 col-xs-6 item ">
+      <div class="panel panel-default wow slideInUp">
         <div class="panel-body posr">
           <a href="<?php echo $url_service.$data->imageName; ?>" title="<?php echo $data->imageTitulo; ?>" class="caption" data-gallery>
             <figure>

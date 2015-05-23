@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
   <link href="<?php echo base_url(); ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="<?php echo base_url(); ?>assets/css/app.css" rel="stylesheet">
+  <link href="<?php echo base_url(); ?>assets/css/animate.css" rel="stylesheet">
 
   <!-- icons -->
   <link rel="shortcut icon" type="image/ico" href="<?php echo base_url(); ?>favicon.ico">
@@ -51,9 +52,9 @@
 <header>
 <div class="welcome-home">
   <div class="container-fluid">
-    <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Santa Rosa de la Yunga"></a>
+    <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Santa Rosa de la Yunga" class="wow slideInDown"></a>
     <h1><span class="hidden-xs">Bienvenidos a </span><br><strong class="welcome">Santa Rosa de la Yunga</strong></h1>
-    <div class="social-header">
+    <div class="social-header wow slideInRight">
       <span>Síguenos en:</span>
       <a href="https://www.facebook.com/pages/Santa-Rosa-Ja%C3%A9n/541317689344111" target="_blank" class="fb " data-toggle="tooltip" title="Facebook" data-placement="left"><i class="fa fa-facebook"></i></a>
     </div>
@@ -68,12 +69,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo base_url(); ?>">Yunga</a>
+      <a class="navbar-brand wow slideInLeft" href="<?php echo base_url(); ?>">Yunga</a>
     </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse actives">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav wow slideInLeft">
         <li><a href="<?php echo base_url(); ?>proyecto">Proyecto</a></li>
         <li><a href="<?php echo base_url(); ?>historia">Historia</a></li>
       </ul>
@@ -82,13 +83,13 @@
         <a href="<?php echo base_url(); ?>submit" class="btn btn-info">Enviar Foto</a>
       </div>
 
-      <?php echo form_open('search','class="navbar-form navbar-left" role="search"'); ?>
+      <?php echo form_open('search','class="navbar-form navbar-left wow slideInRight" role="search"'); ?>
         <div class="form-group">
           <input type="text" name="keyValue" class="form-control" placeholder="Buscar..." required>
         </div>
         <button type="submit" class="btn btn-primary">Buscar</button>
       <?php echo form_close(); ?>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right wow slideInRight">
         <li><a href="<?php echo base_url(); ?>favoritas">Favoritas</a></li>
         <li class="dropdown <?php echo actives('search').actives('photos'); ?>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorías <b class="caret"></b></a>
@@ -132,7 +133,7 @@
 </div>
 
 <footer id="footer-page">
-  <div class="container-fluid">
+  <div class="container-fluid wow slideInUp">
     <div class="row">
       <div class="col-sm-8">
         &copy; 2015. Todos los Derechos Reservados. <em>PowerBy <strong>Keny Romero</strong></em>
@@ -153,6 +154,7 @@
 <script src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/isotope.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/typed.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/wow.min.js"></script>
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/okzoom.js"></script>
 <script src="<?php echo base_url(); ?>assets/plugins/pnotify/pnotify.min.js"></script>
@@ -188,6 +190,9 @@ jQuery(document).ready(function($) {
   var forms = new Kajax();
   forms.sendFormFile('#form-image-upload');
 });
+
+wow = new WOW({ mobile: false, })
+wow.init();
 
 $(function() {
   $('#blueimp-gallery').on('opened', function (event) {
@@ -240,12 +245,6 @@ $(function () {
       $(".facebook-page").css('padding-top', '0');
 
     });
-
-  $(".btn-expand").click(function() {
-    var loadimg = $(this).parents(".caption").children('figure');
-    var img = loadimg.children('img').attr('src');
-    $(".modal-img").attr('src', img);
-  });
 
 })
 </script>

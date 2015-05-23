@@ -1,6 +1,6 @@
 <header id="main-header" class="text-center">
 	<div class="container-fluid">
-		<div class="content-title">
+		<div class="content-title wow slideInUp">
 			<h2 class="text-center"><?php echo $data_photo->imageTitulo; ?></h2>
 		</div>
 	</div>
@@ -9,7 +9,7 @@
 <section>
 <div class="container-fluid">
 	<div class="col-lg-12 item">
-      <div class="panel panel-default">
+      <div class="panel panel-default wow slideInUp">
       	<div class="panel-heading">
       	  <div class="pull-left heading-photo-data">
             <span><i class="fa fa-calendar"></i> <?php echo date_convert($data_photo->imageDate); ?></span>

@@ -1,6 +1,6 @@
 <header id="main-header" class="text-center">
 	<div class="container-fluid">
-		<div class="content-title">
+		<div class="content-title wow slideInUp">
 			<h2 class="text-center"><?php echo $titlepag ?></h2>
 		</div>
 	</div>
@@ -13,7 +13,7 @@
 
   	<?php foreach ($results as $data) { ?>
     <div class="col-lg-3 col-md-4 col-xs-6 item">
-      <div class="panel panel-default">
+      <div class="panel panel-default wow slideInUp">
         <div class="panel-body posr">
           <a href="<?php echo $url_service.$data->imageName; ?>" title="<?php echo $data->imageTitulo; ?>" class="caption" data-gallery>
             <figure>

@@ -7,7 +7,7 @@
 </header>
 
 <section>
-<div class="container-fluid">
+<div class="container-fluid wow slideInUp">
 	<div class="col-md-6 col-xs-10 panel-form-upload col-md-offset-3 col-xs-offset-1">
       <div class="panel panel-default panel-upload">
         <?php echo form_open_multipart('http://www.creatipro.com/apps/apiyunga/api/new_image','id="form-image-upload"'); ?>

@@ -1,13 +1,13 @@
 <header id="main-header" class="text-center">
 	<div class="container-fluid">
-		<div class="content-title">
+		<div class="content-title wow slideInUp">
 			<h2 class="text-center">Acerca del Proyecto</h2>
 		</div>
 	</div>
 </header>
 
 <section>
-<div class="container">
+<div class="container wow slideInUp">
 	<h3>YUNGA</h3>
 	<blockquote>
 		<p><strong>Yunga</strong> es el nombre de desarrollo del Proyecto que está pensado para compartir fotografías del <strong>Distrito de Santa Rosa - Jaén</strong>. Está aún en desarrollo y mejorando Cosntantemente.</p>
