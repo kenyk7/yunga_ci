@@ -64,7 +64,7 @@
         <li><a href="<?php echo base_url(); ?>historia">Historia</a></li>
       </ul>
 
-      <div class="navbar-form navbar-left">
+      <div class="navbar-form navbar-left hidden">
         <a href="<?php echo base_url(); ?>submit" class="btn btn-info">Enviar Foto</a>
       </div>
 
