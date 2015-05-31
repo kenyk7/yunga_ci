@@ -14,7 +14,7 @@
       	  <div class="pull-left heading-photo-data">
             <span><i class="fa fa-calendar"></i> <?php echo date_convert($data_photo->imageDate); ?></span>
             <span class="left-10"><i class="fa fa-user"></i> <a href="#">Keny Romero</a></span>
-          	<span class="left-10"><i class="fa fa-heart"></i> <?php echo $data_photo->imageLikes; ?> Likes</span>
+          	<span class="left-10"><i class="fa fa-thumbs-up"></i> <?php echo $data_photo->imageLikes; ?> Likes</span>
           </div>
           <div class="pull-right social-container">
             <div class="btn-group btn-group- btn-social">
@@ -25,8 +25,9 @@
             </div>
 
             <div class="social-actions">
-              <a data-action="<?php echo $this->base_service_likes.$data_photo->tokenId ?>" data-toggle="tooltip" title="Like +" data-placement="top"><i class="fa fa-heart"></i></a>
-              <a data-toggle="tooltip" title="Compartir" data-placement="top" class="open-share"><i class="fa fa-share-alt"></i> </a>
+              <span class="likes"><?php echo $data->imageLikes; ?></span>
+              <a data-action="<?php echo $this->base_service_likes.$data_photo->tokenId ?>" data-toggle="tooltip" title="Like +" data-placement="top" class="action-like"><i class="fa fa-thumbs-up"></i></a>
+              <a data-toggle="tooltip" title="Compartir" data-placement="left" class="open-share"><i class="fa fa-share-alt"></i> </a>
             </div>
 
           </div>

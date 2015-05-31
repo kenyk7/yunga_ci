@@ -31,16 +31,19 @@
 .panel-upload .fileinput .thumbnail > img {
   height: 100%;
 }
+.panel-default {
+  overflow: hidden;
+}
 .right-normal {
   right: 4px !important;
   opacity: 1 !important;
 }
 .btn-social {
   position: absolute;
-  top: 4px;
-  right: 80px;
-  z-index: 99;
+  top: 5px;
+  right: -180px;
   opacity: 0;
+  z-index: 99;
   -webkit-transition: all .5s;
           transition: all .5s;
 }
@@ -329,6 +332,14 @@ a.btn-external {
   bottom: 15px;
   color: #fff;
   font-size: 1.5em;
+}
+.social-actions {
+  position: relative;
+  top: -2px;
+}
+.social-actions span {
+  position: relative;
+  right: -10px;
 }
 .social-actions a {
   cursor: pointer;

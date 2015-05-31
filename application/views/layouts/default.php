@@ -230,15 +230,19 @@ $(function () {
 
   $(".social-actions [data-action]").click(function(e) {
     e.preventDefault();
+    var clickthis = $(this);
     $.get($(this).data('action'), function(data) {
       if(data['message'] === 'success'){
           new PNotify({title: 'Ok!',text: 'Gracias por el Like',type: 'success',styling: 'fontawesome'});
+          var numlikes = clickthis.parents('.social-actions').children('.likes');
+          numlikes.text(Number(numlikes.text())+1);
+
       }else{
         new PNotify({title: 'Info',text: 'Al parecer ya indicó que le gusta esta Foto',type: 'info',styling: 'fontawesome'});
       }
     });
   });
- 
+
  var $K = $('.isotope-content');
     $K.imagesLoaded(function () {
       $K.masonry({itemSelector:'.item', isAnimated:true,layoutMode: 'masonry'});

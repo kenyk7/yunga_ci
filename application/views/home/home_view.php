@@ -28,7 +28,7 @@
             </figure>
             <div class="caption-hover">
               <div class="hover-details">
-                <span><i class="fa fa-heart"></i> <b class="num-like" data-likes="<?php echo $data->imageLikes; ?>"><?php echo $data->imageLikes; ?></b> Likes</span><br>
+                <span><i class="fa fa-thumbs-up"></i> <b class="num-like" data-likes="<?php echo $data->imageLikes; ?>"><?php echo $data->imageLikes; ?></b> Likes</span><br>
                 <span><i class="fa fa-user"></i> Keny Romero </span>
               </div>
             </div>
@@ -49,8 +49,9 @@
             </div>
 
             <div class="social-actions">
-              <a data-action="<?php echo $this->base_service_likes.$data->tokenId ?>" data-toggle="tooltip" title="Like +" data-placement="top"><i class="fa fa-heart"></i></a>
-              <a data-toggle="tooltip" title="Compartir" data-placement="top" class="open-share"><i class="fa fa-share-alt"></i> </a>
+              <span class="likes"><?php echo $data->imageLikes; ?></span>
+              <a data-action="<?php echo $this->base_service_likes.$data->tokenId ?>" data-toggle="tooltip" title="Like +" class="action-like" data-placement="top"><i class="fa fa-thumbs-up"></i></a>
+              <a data-toggle="tooltip" title="Compartir" data-placement="left" class="open-share"><i class="fa fa-share-alt"></i> </a>
             </div>
 
           </div>
