@@ -25,7 +25,7 @@
             </div>
 
             <div class="social-actions">
-              <span class="likes"><?php echo $data->imageLikes; ?></span>
+              <span class="likes"><?php echo $data_photo->imageLikes; ?></span>
               <a data-action="<?php echo $this->base_service_likes.$data_photo->tokenId ?>" data-toggle="tooltip" title="Like +" data-placement="top" class="action-like"><i class="fa fa-thumbs-up"></i></a>
               <a data-toggle="tooltip" title="Compartir" data-placement="left" class="open-share"><i class="fa fa-share-alt"></i> </a>
             </div>
